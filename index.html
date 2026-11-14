@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aous Nabli — Portfolio</title>
+  <meta name="description" content="Aous Nabli, élève ingénieur en Cloud Computing à ESPRIT (Tunis). Cloud, DevOps, développement et intelligence artificielle. Stage PFE de 6 mois à partir de janvier 2027.">
+  <meta name="theme-color" content="#faf8f4">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,700;1,9..144,500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#accueil">Aller au contenu</a>
+
+  <header class="nav" id="nav">
+    <a class="logo" href="#accueil">A<span>N</span></a>
+    <button class="burger" id="burger" aria-label="Menu" aria-expanded="false"><i></i><i></i></button>
+    <nav id="menu">
+      <a href="#apropos">À propos</a>
+      <a href="#competences">Compétences</a>
+      <a href="#projets">Projets</a>
+      <a href="#experiences">Expériences</a>
+      <a href="#certifications" id="nav-certs">Certifications</a>
+      <a class="btn small" href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="accueil">
+      <div class="hero-text reveal">
+        <p class="eyebrow">Bonjour, je suis</p>
+        <h1>Aous Nabli</h1>
+        <h2>Élève ingénieur en dernière année</h2>
+        <p class="sub">Cloud Computing<br>ESPRIT — École Supérieure Privée d’Ingénierie et de Technologies</p>
+        <p class="tags">Cloud <b>·</b> DevOps <b>·</b> Développement <b>·</b> Intelligence artificielle</p>
+        <p class="lead">Je conçois, automatise et déploie des applications et des solutions intelligentes, du code jusqu’à la production.</p>
+        <div class="badge"><strong>À la recherche d’un stage PFE</strong><span>6 mois · À partir de janvier 2027</span></div>
+        <div class="cta">
+          <a class="btn" href="#projets">Découvrir mes projets</a>
+          <a class="btn ghost" href="#contact">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-photo reveal">
+        <div class="frame">
+          <!-- Remplacez par votre photo : mettez assets/photo.jpg -->
+          <img src="assets/photo.jpg" alt="Portrait d’Aous Nabli" onerror="this.style.display='none'">
+          <span class="initials">AN</span>
+        </div>
+        <p class="caption"><em>Aous</em> Nabli<small>Cloud · DevOps · Dev · IA</small></p>
+      </div>
+    </section>
+
+    <!-- À PROPOS -->
+    <section id="apropos" class="section">
+      <p class="kicker">À propos de moi</p>
+      <h2 class="title">À propos de moi</h2>
+      <div class="about">
+        <div class="reveal">
+          <p>Élève ingénieur en dernière année à ESPRIT (Tunis), je me spécialise en <strong>Cloud Computing</strong>, avec une diplomation prévue en 2027.</p>
+          <p>Passionné par le <strong>cloud</strong>, le <strong>DevOps</strong>, le <strong>développement</strong> et l’<strong>intelligence artificielle</strong>, j’aime automatiser, industrialiser et mettre en production des solutions fiables. J’apprends vite, je travaille en équipe et je relève volontiers de nouveaux défis techniques.</p>
+          <div class="next">
+            <h3>Mon prochain défi</h3>
+            <p>Je recherche un stage PFE de 6 mois à partir de janvier 2027, pour contribuer à des projets concrets et approfondir mes compétences cloud.</p>
+            <a class="btn small" href="#contact">Échangeons ensemble</a>
+          </div>
+        </div>
+        <ol class="timeline reveal">
+          <li><span class="yr">2022 – 2027</span><h3>Cycle d’ingénieur — Informatique</h3><p>ESPRIT, Tunis · Spécialisation Cloud Computing</p></li>
+          <!-- Ajoutez ici d'autres étapes (prépa, lycée...) -->
+        </ol>
+      </div>
+    </section>
+
+    <!-- COMPÉTENCES -->
+    <section id="competences" class="section alt">
+      <p class="kicker">Mon savoir-faire</p>
+      <h2 class="title">Mes compétences</h2>
+      <p class="intro">Du développement à la mise en production.</p>
+      <div class="skills" id="skills"><noscript>Activez JavaScript pour afficher les compétences.</noscript></div>
+    </section>
+
+    <!-- PROJETS -->
+    <section id="projets" class="section">
+      <p class="kicker">Mes réalisations</p>
+      <h2 class="title">Mes projets</h2>
+      <p class="intro">Explorez mes projets en cloud, DevOps, intelligence artificielle et développement.</p>
+      <div class="filters" id="filters"></div>
+      <div class="grid" id="projects"></div>
+    </section>
+
+    <!-- EXPÉRIENCES -->
+    <section id="experiences" class="section alt">
+      <p class="kicker">Mon parcours</p>
+      <h2 class="title">Mes expériences</h2>
+      <p class="intro">Des expériences en développement, IA et MLOps, de la conception au déploiement.</p>
+      <div class="stats">
+        <div><strong id="stat-count">2 stages</strong><span>IA · MLOps · Full-Stack</span></div>
+        <div><strong>Stage PFE · 6 mois</strong><span>À partir de janvier 2027</span></div>
+      </div>
+      <div class="exp" id="experience"></div>
+    </section>
+
+    <!-- CERTIFICATIONS (masquée tant que la liste est vide dans script.js) -->
+    <section id="certifications" class="section" hidden>
+      <p class="kicker">Certifications</p>
+      <h2 class="title">Mes certifications</h2>
+      <p class="intro">Des formations validées par des badges numériques.</p>
+      <div class="grid" id="certs"></div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section alt">
+      <p class="kicker">Échangeons ensemble</p>
+      <h2 class="title">Me contacter</h2>
+      <p class="intro">Une opportunité de stage PFE ou un projet à partager ? Je serais ravi d’échanger avec vous.</p>
+      <div class="contact">
+        <div class="links">
+          <div class="badge"><strong>Stage PFE · 6 mois</strong><span>À partir de janvier 2027</span></div>
+          <a class="card-link" href="mailto:Nabli.Aous@esprit.tn"><b>E-mail</b>Nabli.Aous@esprit.tn</a>
+          <a class="card-link" href="https://github.com/AousNabli" target="_blank" rel="noopener"><b>GitHub</b>AousNabli</a>
+          <a class="card-link" href="https://www.linkedin.com/in/aous-nabli-3722ba271/" target="_blank" rel="noopener"><b>LinkedIn</b>Aous Nabli</a>
+        </div>
+        <form id="form" class="form">
+          <h3>Parlons de votre opportunité</h3>
+          <label>Nom complet<input name="name" required></label>
+          <label>E-mail<input type="email" name="email" required></label>
+          <label>Objet<input name="subject" required></label>
+          <label>Message<textarea name="message" rows="5" required></textarea></label>
+          <button class="btn" type="submit">Envoyer le message</button>
+          <p class="note">Ce bouton ouvre votre application mail. Vous pouvez aussi écrire directement à <a href="mailto:Nabli.Aous@esprit.tn">Nabli.Aous@esprit.tn</a>.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer><p>© 2026 Aous Nabli · Conçu avec soin.</p></footer>
+  <script src="script.js"></script>
+</body>
+</html>
